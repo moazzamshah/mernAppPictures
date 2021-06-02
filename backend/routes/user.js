@@ -41,7 +41,7 @@ router.post('/create', (req, res) => {
   const newUser = new User(req.body);
   newUser.save((err, doc) => {
     if (err) throw err.message;
-    res.json(doc);
+    res.json('User has been created.');
   });
 });
 

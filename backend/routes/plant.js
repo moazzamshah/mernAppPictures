@@ -22,7 +22,7 @@ router.post('/add', upload.single('plantPic'), (req, res) => {
     added_by: '60acb46ba6365517862ad119',
   });
   newPlant.save((err, doc) => {
-    res.json('A new Plant has been added!');
+    res.json('A new Picture has been added');
   });
 });
 // find all plants

@@ -7,6 +7,7 @@ import AllPictures from './components/AllPictures';
 import AddNew from './components/AddNew';
 import SignInPassport from './components/SignInPassport';
 import SignUp from './components/SignUp';
+import Home from './components/Home';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Container>
           <Switch>
             <Route exact path='/'>
-              <h1>Landing page only</h1>
+              <Home />
             </Route>
             <Route path='/add_new'>
               <AddNew />

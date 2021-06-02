@@ -32,7 +32,7 @@ app.post('/signin/passport/local', passport.authenticate('local'), (req, res) =>
 })
 
 
-//! ============= GITHUB STRATEGY=====================
+//! ============= GITHUB STRATEGY==============
 // ask github to give some data
 app.get('/signin/passport/github', passport.authenticate('github'));
 

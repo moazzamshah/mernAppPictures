@@ -39,6 +39,7 @@ const AddNew = () => {
       <Col>
         <h1>Add New Pictures</h1>
         {successMsg != null && <Alert variant='success'>{successMsg}</Alert>}
+
         <Form onSubmit={add}>
           <Form.Group controlId='plantName'>
             <Form.Label>Name</Form.Label>
@@ -64,6 +65,6 @@ const AddNew = () => {
       </Col>
     </Row>
   );
-}
+};
 
 export default AddNew;
