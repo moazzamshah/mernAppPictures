@@ -5,7 +5,6 @@ const plantRouter = require('./routes/plant')
 const userRouter = require('./routes/user')
 const cors = require('cors')
 const mongoose = require('mongoose');
-//  DB_LINK = mongodb+srv://admin:admin1234@cluster0.dzykv.mongodb.net/mernGarden?retryWrites=true&w=majority
 mongoose.connect(process.env.DB_LINK, {
     useUnifiedTopology: true,
     useNewUrlParser: true
