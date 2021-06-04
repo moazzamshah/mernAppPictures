@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Row, Col, Form, Button } from 'react-bootstrap';
 
 const SignInPassport = () => {
-  const [message, setMessage] = useState('');
+  // const [message, setMessage] = useState('');
   const [user, setUser] = useState({
     email: '',
     password: '',
@@ -22,6 +22,13 @@ const SignInPassport = () => {
       .post('signin/passport/local', user)
       .then((res) => console.log('Data from backend', res.data));
   };
+
+  const githubLogin = () => {
+    axios.get('/signin/passport/github')
+    .then(res => {
+      console.log('data from backend', res.data);
+    })
+  }
 
   return (
     <Row>
@@ -45,7 +52,7 @@ const SignInPassport = () => {
           >
             Facebook Login
           </Button>
-          <Button variant='dark' type='submit'>
+          <Button variant='dark' type='submit' onClick={githubLogin}>
             Github Login
           </Button>
         </Form>

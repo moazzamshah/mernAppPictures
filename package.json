@@ -18,5 +18,8 @@
   "homepage": "https://github.com/FbW41/mern_app_mygarden#readme",
   "dependencies": {
     "concurrently": "^6.1.0"
+  },
+  "devDependencies": {
+    "webpack-pwa-manifest": "^4.3.0"
   }
 }

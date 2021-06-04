@@ -7,7 +7,7 @@ const AllPictures = () => {
   //const [updateMsg, setUpdateMsg] = useState();
   useEffect(() => {
     axios.get('/plant/all').then((response) => {
-      console.log(response.data);
+      // console.log(response.data);
       setPlants(response.data);
       // make in unmount or clear after get all data
       setDeleteMsg(null);
